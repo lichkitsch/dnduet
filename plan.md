@@ -47,7 +47,23 @@ user: {
           },
           description: STRING
         }
-      ]
+      ],
+      goal: STRING,
+      locations: [
+        {
+          name: STRING,
+          imgURL: STRING,
+          areas: [
+            {
+              name: STRING,
+              description: STRING,
+              obstacles: [STRING]
+            }
+          ]
+        }
+      ],
+      revelations: [STRING],
+      dividends: [STRING]
     }
   ]
 }
