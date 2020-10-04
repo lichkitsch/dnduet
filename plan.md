@@ -6,7 +6,7 @@ const user: {
   username: STRING,
   email: STRING,
   password: STRING,
-  friends: [user_id],
+  friends: [user.id],
   gm_status: BOOLEAN,
   admin_status: BOOLEAN,
   characters: [CHARACTER],
@@ -32,6 +32,13 @@ const character = {
     wis: NUMBER,
     cha: NUMBER,
   },
+  moves: [
+    {
+      level: NUMBER,
+      name: STRING,
+      description: STRING
+    }
+  ],
   inventory: [STRING],
   details: STRING
 }
